@@ -9,6 +9,10 @@
             android:name=".MCEasyToolbarActivity"
             android:label="@string/title_activity_mceasy_toolbar" >
         </activity>
+        <activity
+            android:name=".MCEasyToolbarImageActivity"
+            android:label="@string/title_activity_mceasy_toolbar_image" >
+        </activity>
     </application>
 
 </manifest>
