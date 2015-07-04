@@ -1,5 +1,6 @@
 package com.mobileia.mceasytoolbar;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -19,7 +20,7 @@ public abstract class MCEasyToolbarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mceasy_toolbar);
 
         init();
-        initToolbar(mToolbar);
+        initToolbar(getSupportActionBar());
         initRecyclerView(mRecyclerView);
     }
 
@@ -31,7 +32,7 @@ public abstract class MCEasyToolbarActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
     }
 
-    protected void initToolbar(Toolbar toolbar) {}
+    protected void initToolbar(ActionBar toolbar) {}
     protected abstract void initRecyclerView(RecyclerView recyclerView);
 
     public RecyclerView getRecyclerView() {
